@@ -100,6 +100,19 @@ namespace Ciklusok_gyakorlasa
                     Console.WriteLine($"A szám: {index} tökéletes.");
                 }
             }
+            int atmero = 0;
+            double kerulet = 0.0d;
+            double terulet = 0.0d;
+
+            Console.Write("Kérem az átmérőt: ");
+            atmero = Int32.Parse(Console.ReadLine());
+
+            kerulet = atmero * Math.PI;
+            terulet = atmero * atmero * Math.PI / 4;
+
+            Console.WriteLine($"Kerület: {kerulet}, terület: {terulet}");
+
+
 
             Console.ReadKey(true);
         }
